@@ -1,2 +1,3 @@
-# Kotlin Modding Skeleton
-Provides an example mod written in Kotlin using Kotlin for Forge.
+# Kevin Nation minecraft mod
+
+A mod written for the community minecraft server https://kevin-nation.com
