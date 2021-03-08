@@ -1,6 +1,5 @@
 package com.`kevin-nation`.minecraft.builder
 
-import com.`kevin-nation`.minecraft.ModItems
 import de.maxanier.guideapi.api.impl.Book
 import de.maxanier.guideapi.api.impl.BookBinder
 import de.maxanier.guideapi.api.impl.abstraction.CategoryAbstract
@@ -12,7 +11,6 @@ import net.minecraft.util.ResourceLocation
 import net.minecraft.util.text.StringTextComponent
 import net.minecraftforge.registries.ForgeRegistries
 import java.awt.Color
-import java.util.Map.entry
 
 class BookBuilder(
     resourceId: String,
