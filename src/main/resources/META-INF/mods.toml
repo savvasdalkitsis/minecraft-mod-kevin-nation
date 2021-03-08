@@ -1,0 +1,34 @@
+# Make sure this is set to "kotlinforforge"
+modLoader="kotlinforforge"
+# Make sure this is set to the appropriate version range
+loaderVersion="[1.9,)" # Require at least 1.9.x
+# License is REQUIRED after 1.16
+license='MIT'
+
+[[mods]]
+modId="kevin-nation"
+version="${file.jarVersion}"
+displayName="Kevin Nation Mod"
+credits="All hail the all mighty Joob"
+authors="Savvas Dalkitsis"
+description='''
+A custom mod for the kevin nation minecraft server
+'''
+[[dependencies.kevin-nation]]
+    modId="forge"
+    mandatory=true
+    versionRange="[35,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.kevin-nation]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.16.4,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.kevin-nation]]
+    modId = "guideapi-vp"
+    mandatory = true
+    versionRange = "[${guideapi_version},)"
+    ordering = "AFTER"
+    side = "BOTH"
