@@ -44,10 +44,10 @@ class BookBuilder(
             }
             .build()
 
-    fun category(title: String, itemResourceId: String, categoryBuilder: CategoryBuilder.() -> Unit) =
-        category(title, itemFromResourceName(itemResourceId), categoryBuilder)
+    fun category(itemResourceId: String, title: String, categoryBuilder: CategoryBuilder.() -> Unit) =
+        category(itemFromResourceName(itemResourceId), title, categoryBuilder)
 
-    fun category(title: String, item: Item, categoryBuilder: CategoryBuilder.() -> Unit) {
+    fun category(item: Item, title: String, categoryBuilder: CategoryBuilder.() -> Unit) {
         categories.add(CategoryItemStack(title.component, ItemStack(item)).apply {
             withKeyBase(title)
             categoryBuilder(CategoryBuilder(this))

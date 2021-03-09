@@ -2,11 +2,18 @@ package com.`kevin-nation`.minecraft
 
 object ModItems {
     const val WAYSTONE = "waystones:waystone"
+    const val MOSSY_WAYSTONE = "waystones:mossy_waystone"
+    const val SANDY_WAYSTONE = "waystones:sandy_waystone"
     const val WARP_STONE = "waystones:warp_stone"
     const val WARP_SCROLL = "waystones:warp_scroll"
     const val RETURN_SCROLL = "waystones:return_scroll"
     const val BOUND_SCROLL = "waystones:bound_scroll"
     const val COIN_DOLLAR = "calemiutils:coin_dollar"
+    const val MONEY_BAG_RICH = "calemiutils:money_bag_rich"
+    const val MONEY_BAG_CHEAP = "calemiutils:money_bag_cheap"
+    const val TRADING_POST = "calemiutils:trading_post"
+    const val SECURITY_WRENCH = "calemiutils:security_wrench"
+    const val WALLET = "calemiutils:wallet"
     const val IRON_SCAFFOLD = "calemiutils:iron_scaffold"
     const val BANNER_RALLY_GUARDS = "minecolonies:banner_rally_guards"
     const val SUPPLY_CHEST_DEPLOYER = "minecolonies:supplychestdeployer"
@@ -15,4 +22,5 @@ object ModItems {
     const val STAMP = "endermail:stamp"
     const val PAPER_LANTERN = "fairylights:paper_lantern"
     const val GOLDEN_HOPPER = "goldenhopper:golden_hopper"
+    const val WATER_WHEEL = "create:water_wheel"
 }

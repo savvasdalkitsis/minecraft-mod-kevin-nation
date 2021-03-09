@@ -22,15 +22,15 @@ class EntryBuilder(
         pageList += PageHelper.pagesForLongText(builder.buildPageContent())
     }
 
-    fun pageWithText(text: String) {
+    fun pagesWithText(text: String) {
         pageList += PageHelper.pagesForLongText(text.trimMargin().component)
     }
 
-    fun pageWithText(resourceName: String, text: String) {
-        pageWithText(itemFromResourceName(resourceName), text)
+    fun pagesWithText(resourceName: String, text: String) {
+        pagesWithText(itemFromResourceName(resourceName), text)
     }
 
-    fun pageWithText(item: Item, text: String) {
+    fun pagesWithText(item: Item, text: String) {
         pageList += PageHelper.pagesForLongText(text.trimMargin().component, item)
     }
 
@@ -56,15 +56,23 @@ class EntryBuilder(
     fun itemStackPage(resourceName: String, contentsProvider: PageContentBuilder.() -> Unit) {
         val builder = PageContentBuilder()
         contentsProvider(builder)
-        itemStackPage(ItemStack(itemFromResourceName(resourceName)), builder.buildPageContent());
+        itemStackPage(ItemStack(itemFromResourceName(resourceName)), builder.buildPageContent())
     }
 
     fun itemStackPage(resourceName: String, contents: String) {
-        itemStackPage(ItemStack(itemFromResourceName(resourceName)), contents);
+        itemStackPage(ItemStack(itemFromResourceName(resourceName)), contents)
     }
 
     fun itemStackPage(items: ItemStack, contents: String) {
-        itemStackPage(items, contents.component)
+        itemStackPage(items, contents.trimMargin().component)
+    }
+
+    fun itemStackPage(items: Ingredient, contents: String) {
+        itemStackPage(items, contents.trimMargin().component)
+    }
+
+    fun itemStackPage(items: Ingredient, contents: ITextProperties) {
+        pageList += PageItemStack(contents, items)
     }
 
     fun itemStackPage(items: ItemStack, contents: ITextProperties) {

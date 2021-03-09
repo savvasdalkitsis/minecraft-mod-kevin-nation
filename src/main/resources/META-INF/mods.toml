@@ -18,17 +18,23 @@ A custom mod for the kevin nation minecraft server
     modId="forge"
     mandatory=true
     versionRange="[35,)"
-    ordering="NONE"
+    ordering="AFTER"
     side="BOTH"
 [[dependencies.kevin-nation]]
     modId="minecraft"
     mandatory=true
     versionRange="[1.16.4,)"
-    ordering="NONE"
+    ordering="AFTER"
     side="BOTH"
 [[dependencies.kevin-nation]]
     modId = "guideapi-vp"
     mandatory = true
     versionRange = "[${guideapi_version},)"
+    ordering = "AFTER"
+    side = "BOTH"
+[[dependencies.kevin-nation]]
+    modId = "calemiutils"
+    mandatory = true
+    versionRange = "[1.1.1,)"
     ordering = "AFTER"
     side = "BOTH"
