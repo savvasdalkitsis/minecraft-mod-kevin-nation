@@ -3,6 +3,7 @@ package com.`kevin-nation`.minecraft
 import com.`kevin-nation`.minecraft.builder.BookBuilder
 import com.`kevin-nation`.minecraft.builder.CategoryBuilder
 import com.`kevin-nation`.minecraft.builder.itemFromResourceName
+import com.`kevin-nation`.minecraft.data.guiTexture
 import de.maxanier.guideapi.api.GuideBook
 import de.maxanier.guideapi.api.IGuideBook
 import de.maxanier.guideapi.api.impl.Book
